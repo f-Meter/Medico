@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Generador de receta"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_nom_med"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_titulo"
+                    android:layout_centerHorizontal="true"
+                    android:text="Nombre del medicamento"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/sp_nom_med"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nom_med"
+                    android:backgroundTint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_pre_med"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_nom_med"
+                    android:layout_centerHorizontal="true"
+                    android:text="Presentacion del medicamento"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/sp_pre_med"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_pre_med"
+                    android:backgroundTint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_tipo_pas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_pre_med"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tipo del paciente"
+                    android:textColor="#000000" />
+
+
+                <Spinner
+                    android:id="@+id/sp_tipo_pas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tipo_pas"
+                    android:backgroundTint="#000000"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/tv_peso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_tipo_pas"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="Peso del paciente"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_peso"
+                    android:ems="10"
+                    android:hint="(Kg)"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_talla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_peso"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="Talla"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_talla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_talla"
+                    android:ems="10"
+                    android:hint="(m)"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_FC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_talla"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="FC"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_FC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_FC"
+                    android:ems="10"
+                    android:hint="Fc"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_FR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_FC"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="FR"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_FR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_FR"
+                    android:ems="10"
+                    android:hint="Fr"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_TC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_FR"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="TC"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_TC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_TC"
+                    android:ems="10"
+                    android:hint="Tc"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_TA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_TC"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="TA"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_TA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_TA"
+                    android:ems="10"
+                    android:hint="Ta"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_glu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_TA"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="Glucosa"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_glucosa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_glu"
+                    android:ems="10"
+                    android:hint="Glucosa"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_SpO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_glucosa"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="SpO2"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_SpO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_SpO2"
+                    android:ems="10"
+                    android:hint="SpO2"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_diag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_SpO2"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#000000"
+                    android:text="Diagnostico"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_diag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_diag"
+                    android:ems="10"
+                    android:hint="Dx"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_dia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_diag"
+                    android:layout_centerHorizontal="true"
+                    android:text="Dias por tomar"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_dias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_dia"
+                    android:ems="10"
+                    android:hint="Dias"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_dias"
+                    android:layout_centerHorizontal="true"
+                    android:text="Dar cada"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/sp_hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hora"
+                    android:backgroundTint="#000000"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/tv_nota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_hora"
+                    android:layout_centerHorizontal="true"
+                    android:text="NOTA:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txt_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nota"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:hint="Agregar nota"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <Button
+                    android:id="@+id/btn_aceptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_nota"
+                    android:layout_centerHorizontal="true"
+                    android:text="Crear Receta" />
+
+                <TextView
+                    android:id="@+id/tv_Receta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_aceptar"
+                    android:layout_centerHorizontal="true"
+                    android:text="RECETA:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_Receta_creada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Receta"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
